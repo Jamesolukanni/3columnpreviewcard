@@ -1,0 +1,120 @@
+body {
+    margin: 0;
+    box-sizing: border-box;
+    background-color: hsl(0, 0%, 95%);
+    min-height: 100vh;
+    font-family: 'Lexend Deca' Big Shoulders Display;
+}
+.container {
+    border-radius: 10px;
+    width: 936px;
+    margin: 100px auto 0;
+    height: 500px;
+    display: flex;
+    flex-wrap: wrap;
+    overflow: hidden;
+}
+.box {
+    width: 300px;
+    flex-grow: 1;
+    flex: wrap;
+}
+.sedan {
+    background-color: hsl(31, 77%, 52%);
+}
+.suv {
+    background-color: hsl(184, 100%, 22%);
+}
+.luxury {
+    background-color: hsl(179, 100%, 13%);
+}
+h1 {
+    font-family: Big Shoulders Display;
+    color: hsl(0, 0%, 95%);
+    font-size: 2.5125rem;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+p {
+    font-family: Lexend Deca;
+    font-size: 0.9375rem;
+    font-weight: 400;
+    line-height: 25px;
+    color: hsla(0, 0%, 100%, 0.75);
+}
+.content {
+    height: 500px;
+    margin: 0 45px 0 55px;
+    padding-top: 45px;
+}
+footer {
+    margin: 90px 0 0;
+}
+button {
+    width: 150px;
+    height: 50px;
+    border-radius: 30px;
+    border: none;
+    cursor: pointer;
+    background-color: hsl(0, 0%, 95%);
+}
+.link {
+    text-decoration: none;
+}
+.sedan-link {
+    color: hsl(31, 77%, 52%);
+}
+.suv-link {
+    color: hsl(184, 100%, 22%);
+}
+.luxury-link {
+    color: hsl(179, 100%, 13%);
+}
+@media(min-width: 667px) and (max-width: 940px) {
+    .container {
+        width: 90%;
+        height: 1500px;
+    }
+    .box {
+        width: 300px;
+        flex-grow: 1;
+        flex: wrap;
+        height: 500px;
+        align-content: center;
+    }
+    .box:nth-child(3) {
+        margin-top: -500px;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+    }
+
+    
+}
+@media (max-width: 666px) {
+    .container {
+        width: 90%;
+        height: 1500px;
+    }
+    .box {
+        width: 300px;
+        flex-grow: 1;
+        flex: wrap;
+        height: 500px;
+        align-content: center;
+    }
+    .box:nth-child(3) {
+        margin-top: 0;
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
+    } 
+    
+}
+@media (max-width: 375px) {
+    footer {
+        margin: 40px 0 0;
+    }
+    .container {
+        width: 90%;
+        height: 1500px;
+    }
+}
